@@ -8,17 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		165EC8D317A8AD3300B43CF4 /* JTTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F895AA17A7D10900552CFC /* JTTreeTests.m */; };
-		16B8E25E17A8ADE700A70EDB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1635386017A652EE00FC5CAA /* JTTree.m */; };
 		16F895A317A7D10900552CFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F895A217A7D10900552CFC /* SenTestingKit.framework */; };
 		B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B07BA6641EBBB57700D824AB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1635386017A652EE00FC5CAA /* JTTree.m */; };
-		B07BA6651EBBB58300D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 1635385F17A652EE00FC5CAA /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07BA6681EBBB9E600D824AB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA6671EBBB9E600D824AB /* JTTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1635385017A6522500FC5CAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1635385F17A652EE00FC5CAA /* JTTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTree.h; sourceTree = "<group>"; };
-		1635386017A652EE00FC5CAA /* JTTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTree.m; sourceTree = "<group>"; };
 		16F895A117A7D10900552CFC /* JTTreeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTTreeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F895A217A7D10900552CFC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		16F895A617A7D10900552CFC /* JTTreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTTreeTests-Info.plist"; sourceTree = "<group>"; };
@@ -26,6 +22,7 @@
 		B07BA6591EBBB35200D824AB /* JTTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07BA65B1EBBB35200D824AB /* JTTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTTree.h; sourceTree = "<group>"; };
 		B07BA65C1EBBB35200D824AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07BA6671EBBB9E600D824AB /* JTTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +47,6 @@
 		1635384417A6522500FC5CAA = {
 			isa = PBXGroup;
 			children = (
-				1635385217A6522500FC5CAA /* src */,
 				16F895A417A7D10900552CFC /* test */,
 				B07BA65A1EBBB35200D824AB /* JTTree */,
 				1635384F17A6522500FC5CAA /* Frameworks */,
@@ -76,15 +72,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1635385217A6522500FC5CAA /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1635385F17A652EE00FC5CAA /* JTTree.h */,
-				1635386017A652EE00FC5CAA /* JTTree.m */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		16F895A417A7D10900552CFC /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B07BA65B1EBBB35200D824AB /* JTTree.h */,
+				B07BA6671EBBB9E600D824AB /* JTTree.m */,
 				B07BA65C1EBBB35200D824AB /* Info.plist */,
 			);
 			path = JTTree;
@@ -110,7 +98,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07BA6651EBBB58300D824AB /* JTTree.h in Headers */,
 				B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				165EC8D317A8AD3300B43CF4 /* JTTreeTests.m in Sources */,
-				16B8E25E17A8ADE700A70EDB /* JTTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07BA6641EBBB57700D824AB /* JTTree.m in Sources */,
+				B07BA6681EBBB9E600D824AB /* JTTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +413,7 @@
 				B07BA65F1EBBB35200D824AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
