@@ -11,6 +11,8 @@
 		16B8E25E17A8ADE700A70EDB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1635386017A652EE00FC5CAA /* JTTree.m */; };
 		16F895A317A7D10900552CFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F895A217A7D10900552CFC /* SenTestingKit.framework */; };
 		B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07BA6641EBBB57700D824AB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1635386017A652EE00FC5CAA /* JTTree.m */; };
+		B07BA6651EBBB58300D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 1635385F17A652EE00FC5CAA /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07BA6651EBBB58300D824AB /* JTTree.h in Headers */,
 				B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07BA6641EBBB57700D824AB /* JTTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
