@@ -10,6 +10,7 @@
 		165EC8D317A8AD3300B43CF4 /* JTTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F895AA17A7D10900552CFC /* JTTreeTests.m */; };
 		16B8E25E17A8ADE700A70EDB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1635386017A652EE00FC5CAA /* JTTree.m */; };
 		16F895A317A7D10900552CFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F895A217A7D10900552CFC /* SenTestingKit.framework */; };
+		B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		16F895A217A7D10900552CFC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		16F895A617A7D10900552CFC /* JTTreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTTreeTests-Info.plist"; sourceTree = "<group>"; };
 		16F895AA17A7D10900552CFC /* JTTreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTTreeTests.m; sourceTree = "<group>"; };
+		B07BA6591EBBB35200D824AB /* JTTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07BA65B1EBBB35200D824AB /* JTTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTTree.h; sourceTree = "<group>"; };
+		B07BA65C1EBBB35200D824AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B07BA6551EBBB35200D824AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +50,7 @@
 			children = (
 				1635385217A6522500FC5CAA /* src */,
 				16F895A417A7D10900552CFC /* test */,
+				B07BA65A1EBBB35200D824AB /* JTTree */,
 				1635384F17A6522500FC5CAA /* Frameworks */,
 				1635384E17A6522500FC5CAA /* Products */,
 			);
@@ -48,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				16F895A117A7D10900552CFC /* JTTreeTests.octest */,
+				B07BA6591EBBB35200D824AB /* JTTree.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +92,27 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		B07BA65A1EBBB35200D824AB /* JTTree */ = {
+			isa = PBXGroup;
+			children = (
+				B07BA65B1EBBB35200D824AB /* JTTree.h */,
+				B07BA65C1EBBB35200D824AB /* Info.plist */,
+			);
+			path = JTTree;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B07BA6561EBBB35200D824AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		16F895A017A7D10900552CFC /* JTTreeTests */ = {
@@ -99,6 +132,24 @@
 			productReference = 16F895A117A7D10900552CFC /* JTTreeTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		B07BA6581EBBB35200D824AB /* JTTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07BA6601EBBB35200D824AB /* Build configuration list for PBXNativeTarget "JTTree" */;
+			buildPhases = (
+				B07BA6541EBBB35200D824AB /* Sources */,
+				B07BA6551EBBB35200D824AB /* Frameworks */,
+				B07BA6561EBBB35200D824AB /* Headers */,
+				B07BA6571EBBB35200D824AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTTree;
+			productName = JTTree;
+			productReference = B07BA6591EBBB35200D824AB /* JTTree.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +158,13 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jacob Bandes-Storch";
+				TargetAttributes = {
+					B07BA6581EBBB35200D824AB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YEBVWK4Z2W;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 1635384817A6522500FC5CAA /* Build configuration list for PBXProject "JTTree" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -121,12 +179,20 @@
 			projectRoot = "";
 			targets = (
 				16F895A017A7D10900552CFC /* JTTreeTests */,
+				B07BA6581EBBB35200D824AB /* JTTree */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		16F8959F17A7D10900552CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07BA6571EBBB35200D824AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,6 +208,13 @@
 			files = (
 				165EC8D317A8AD3300B43CF4 /* JTTreeTests.m in Sources */,
 				16B8E25E17A8ADE700A70EDB /* JTTree.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07BA6541EBBB35200D824AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +321,80 @@
 			};
 			name = Release;
 		};
+		B07BA65E1EBBB35200D824AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YEBVWK4Z2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JTTree/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B07BA65F1EBBB35200D824AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YEBVWK4Z2W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = JTTree/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +415,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B07BA6601EBBB35200D824AB /* Build configuration list for PBXNativeTarget "JTTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07BA65E1EBBB35200D824AB /* Debug */,
+				B07BA65F1EBBB35200D824AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
