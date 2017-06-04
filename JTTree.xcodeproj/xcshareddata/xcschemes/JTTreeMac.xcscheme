@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B03BF6541EE36F720040AA30"
-               BuildableName = "JTTreeMac.framework"
+               BuildableName = "JTTree.framework"
                BlueprintName = "JTTreeMac"
                ReferencedContainer = "container:JTTree.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B03BF6541EE36F720040AA30"
-            BuildableName = "JTTreeMac.framework"
+            BuildableName = "JTTree.framework"
             BlueprintName = "JTTreeMac"
             ReferencedContainer = "container:JTTree.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B03BF6541EE36F720040AA30"
-            BuildableName = "JTTreeMac.framework"
+            BuildableName = "JTTree.framework"
             BlueprintName = "JTTreeMac"
             ReferencedContainer = "container:JTTree.xcodeproj">
          </BuildableReference>

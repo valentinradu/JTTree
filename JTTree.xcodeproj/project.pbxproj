@@ -12,6 +12,7 @@
 		B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B07BA6681EBBB9E600D824AB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA6671EBBB9E600D824AB /* JTTree.m */; };
 		B0AAB4F81EE4C7FE001D5A5E /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0AAB4FB1EE4CAB3001D5A5E /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA6671EBBB9E600D824AB /* JTTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -263,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AAB4FB1EE4CAB3001D5A5E /* JTTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
