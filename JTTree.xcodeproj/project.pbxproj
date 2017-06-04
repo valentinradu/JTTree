@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		165EC8D317A8AD3300B43CF4 /* JTTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F895AA17A7D10900552CFC /* JTTreeTests.m */; };
 		16F895A317A7D10900552CFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F895A217A7D10900552CFC /* SenTestingKit.framework */; };
-		B03BF6591EE36F720040AA30 /* JTTreeMac.h in Headers */ = {isa = PBXBuildFile; fileRef = B03BF6571EE36F720040AA30 /* JTTreeMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B07BA65D1EBBB35200D824AB /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B07BA6681EBBB9E600D824AB /* JTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA6671EBBB9E600D824AB /* JTTree.m */; };
+		B0AAB4F81EE4C7FE001D5A5E /* JTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B07BA65B1EBBB35200D824AB /* JTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,7 @@
 		16F895A217A7D10900552CFC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		16F895A617A7D10900552CFC /* JTTreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTTreeTests-Info.plist"; sourceTree = "<group>"; };
 		16F895AA17A7D10900552CFC /* JTTreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTTreeTests.m; sourceTree = "<group>"; };
-		B03BF6551EE36F720040AA30 /* JTTreeMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTTreeMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B03BF6571EE36F720040AA30 /* JTTreeMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTTreeMac.h; sourceTree = "<group>"; };
+		B03BF6551EE36F720040AA30 /* JTTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03BF6581EE36F720040AA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07BA6591EBBB35200D824AB /* JTTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07BA65B1EBBB35200D824AB /* JTTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTTree.h; sourceTree = "<group>"; };
@@ -71,7 +70,7 @@
 			children = (
 				16F895A117A7D10900552CFC /* JTTreeTests.octest */,
 				B07BA6591EBBB35200D824AB /* JTTree.framework */,
-				B03BF6551EE36F720040AA30 /* JTTreeMac.framework */,
+				B03BF6551EE36F720040AA30 /* JTTree.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +96,6 @@
 		B03BF6561EE36F720040AA30 /* JTTreeMac */ = {
 			isa = PBXGroup;
 			children = (
-				B03BF6571EE36F720040AA30 /* JTTreeMac.h */,
 				B03BF6581EE36F720040AA30 /* Info.plist */,
 			);
 			path = JTTreeMac;
@@ -120,7 +118,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03BF6591EE36F720040AA30 /* JTTreeMac.h in Headers */,
+				B0AAB4F81EE4C7FE001D5A5E /* JTTree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +165,7 @@
 			);
 			name = JTTreeMac;
 			productName = JTTreeMac;
-			productReference = B03BF6551EE36F720040AA30 /* JTTreeMac.framework */;
+			productReference = B03BF6551EE36F720040AA30 /* JTTree.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B07BA6581EBBB35200D824AB /* JTTree */ = {
@@ -407,8 +405,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTreeMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTree;
+				PRODUCT_NAME = JTTree;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -442,8 +440,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTreeMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewisesystems.JTTree;
+				PRODUCT_NAME = JTTree;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -552,6 +550,7 @@
 				B03BF65B1EE36F720040AA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B07BA6601EBBB35200D824AB /* Build configuration list for PBXNativeTarget "JTTree" */ = {
 			isa = XCConfigurationList;
